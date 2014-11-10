@@ -23,8 +23,7 @@ using namespace math;
 #include "c_Brush.h"
 
 #include <GraphicsLib.h> // Graphics
-using namespace gr;
 
-typedef void (*PAINTPROC)(Graphics *g);
+typedef void (*PAINTPROC)(CDcGraphics *g);
 
 

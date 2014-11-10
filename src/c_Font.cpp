@@ -2,7 +2,7 @@
 #include "common/_required.h"
 #include "c_Font.h"
 #include "f_drawobject.h"
-#include "util/mywstring.h"
+#include <StringLib.h>
 using namespace util;
 
 static int point_to_height(int point)

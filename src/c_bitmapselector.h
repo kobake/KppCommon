@@ -12,7 +12,7 @@ protected:
 	bool isValidData(){ return bmp!=NULL; }
 	int getDataNW(){ return bmp->GetSize().w/32; }
 	int getDataNH(){ return bmp->GetSize().h/32; }
-	void drawData(Graphics *g,int xoff,int yoff);
+	void drawData(CDcGraphics *g,int xoff,int yoff);
 protected:
 	CDib* bmp;
 public:

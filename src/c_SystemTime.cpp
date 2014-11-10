@@ -2,7 +2,7 @@
 #include <cstdio>
 #include "common/_required.h"
 #include "c_SystemTime.h"
-#include "util/mystring.h"
+#include <StringLib.h>
 
 void ZeroSYSTEMTIME(SYSTEMTIME *time)
 {

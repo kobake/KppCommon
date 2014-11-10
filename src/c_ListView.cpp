@@ -6,7 +6,7 @@ using namespace std;
 #include "c_ListView.h"
 #include "f_window.h"
 #include "id/class.h"
-#include "util/mywstring.h"
+#include <StringLib.h>
 using namespace util;
 
 LRESULT ListView::onSize(UINT msg,WPARAM wParam,LPARAM lParam)

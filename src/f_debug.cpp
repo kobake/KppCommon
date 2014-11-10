@@ -1,7 +1,8 @@
 #include "common/_required.h"
-#include "util/mywstring.h"
+#include <StringLib.h>
 using namespace util;
 #include "dbg_common.h"
+#include <MMSystem.h>
 
 #ifndef _DEBUG
 void debugprintf_dummy(const wchar *format,...)

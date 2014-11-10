@@ -219,7 +219,7 @@ LRESULT ScrollDataWindow::onScroll(UINT msg,WPARAM wParam,LPARAM lParam)
 // -- -- -- -- -- -- -- -- -- -- -- -- -- 描画  -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 
-LRESULT ScrollDataWindow::onPaint(Graphics *g)
+LRESULT ScrollDataWindow::onPaint(CDcGraphics *g)
 {
 	if(!isValidData()){ return Window::onPaint(g); }
 	//描画開始
@@ -234,8 +234,9 @@ void ScrollDataWindow::setCursorFigure(int figure)
 	cursor_figure=figure;
 }
 
+#if 0
 //カーソル描画
-void ScrollDataWindow::drawCursor(Graphics *g,int xoff,int yoff)
+void ScrollDataWindow::drawCursor(CDcGraphics *g,int xoff,int yoff)
 {
 	int x=cursor->x()-xoff; x*=32;
 	int y=cursor->y()-yoff; y*=32;
@@ -248,7 +249,7 @@ void ScrollDataWindow::drawCursor(Graphics *g,int xoff,int yoff)
 		g->setInvert(b);
 	}
 }
-
+#endif
 
 // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 // -- -- -- -- -- -- -- -- -- -- -- -- メッセージ処理  -- -- -- -- -- -- -- -- -- -- -- -- -- -- //

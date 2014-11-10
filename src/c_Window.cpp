@@ -2,11 +2,14 @@
 #include "c_App.h"
 #include "c_Window.h"
 #include "f_window.h"
-#include "util/mystring.h"
+#include <StringLib.h>
 #include "f_debug.h"
 #include "common/_required.h"
 #include "id/class.h"
 #include "id/menu.h"
+#include <ShellAPI.h>
+#include <GraphicsLib.h>
+#include <MMSystem.h>
 
 /*
 -- -- -- -- -- -- -- -- -- -- -- -- -- メ モ -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
@@ -23,6 +26,13 @@ HWND-Window関連付けが解かれ、onDestroyが呼ばれ、DestroyWindow(hwnd)を実行する。
 
 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
 */
+
+void Window::dragAcceptFiles(bool accept, bool notify)
+{
+	DragAcceptFiles(hwnd, accept?TRUE:FALSE);
+	notify_drop=notify;
+}
+
 
 void SimpleList_newValue(CHILD &dst)
 {
@@ -376,8 +386,8 @@ void Window::enableScroll(bool e,int sb_kind)
 // -- -- -- -- -- -- -- -- -- -- -- -- メッセージ処理  -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 
-#include "win/gr/CDcGraphics.h"
-using namespace win::gr;
+#include <GraphicsLib.h>
+// using namespace win::gr;
 
 LRESULT CALLBACK Window::WndProcWindow(HWND hwnd,UINT msg,WPARAM wparam,LPARAM lparam)
 {
@@ -404,7 +414,7 @@ LRESULT CALLBACK Window::WndProcWindow(HWND hwnd,UINT msg,WPARAM wparam,LPARAM l
 		break;
 	case WM_PAINT:
 		/*if(window->g_paint==0){
-			Graphics g(1,1);
+			CDcGraphics g(1,1);
 			onPaint_onWindow=0;
 			window->onPaint(&g);
 			if(onPaint_onWindow==0){
@@ -419,7 +429,7 @@ LRESULT CALLBACK Window::WndProcWindow(HWND hwnd,UINT msg,WPARAM wparam,LPARAM l
 //			PAINTSTRUCT ps;
 //			HDC hdc;
 //			hdc=BeginPaint(hwnd,&ps);
-//			Graphics g(hdc,window->getClientWidth(),window->getClientHeight());
+//			CDcGraphics g(hdc,window->getClientWidth(),window->getClientHeight());
 //			g.setInvalidRect(&ps.rcPaint);
 			ret=window->onPaint(&g);
 //			EndPaint(hwnd,&ps);
@@ -537,7 +547,7 @@ LRESULT Window::onPaint(UINT msg,WPARAM wparam,LPARAM lparam)
 	return CallWindowProc(WndProcWindowDef,hwnd,msg,wparam,lparam);
 }
 
-LRESULT Window::onPaint(Graphics *g)
+LRESULT Window::onPaint(CDcGraphics *g)
 {
 	return 0L;
 }

@@ -20,7 +20,7 @@ public:
 	//•`‰æ
 	void setPaintProc(PAINTPROC _paintproc);
 	PAINTPROC getPaintProc();
-	virtual LRESULT onPaint(Graphics *g);
+	virtual LRESULT onPaint(CDcGraphics *g);
 	//
 	void setMouseProc(MOUSEPROC _mouseproc);
 	virtual LRESULT onMouse(UINT msg,WPARAM wParam,LPARAM lParam);

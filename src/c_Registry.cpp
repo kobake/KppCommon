@@ -2,7 +2,7 @@
 #include "common/_required.h"
 #include "c_Registry.h"
 #include "t_base.h"
-#include "util/mywstring.h"
+#include <StringLib.h>
 #include "util/std.h"
 #include <string.h>
 #include <wchar.h>

@@ -4,7 +4,7 @@
 #include "c_Label.h"
 #include "c_Button.h"
 #include "c_Screen.h"
-#include "util/mywstring.h"
+#include <StringLib.h>
 #include "c_EditField.h"
 #include "c_ComboBox.h"
 #include "id/class.h"

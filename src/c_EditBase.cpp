@@ -2,7 +2,7 @@
 #include "c_App.h"
 #include "c_EditBase.h"
 #include "include_c_message.h"
-#include "util/mywstring.h"
+#include <StringLib.h>
 #include "id/class.h"
 using namespace util;
 

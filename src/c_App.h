@@ -5,8 +5,9 @@
 #include "t_base.h"
 #include "c_Screen.h"
 #include <WinSystemLib.h> // ini
+#include <ShellAPI.h> // NOTIFYICONDATA
 class Icon;
-class Bitmap;
+class CBitmap;
 
 int argsGetOptions(int argc,wchar *argv[],int *_iarg,int opt[],NAME_VALUE_PAIR<int> opt_table[]);
 
@@ -39,7 +40,7 @@ public:
 	virtual int init()=0;
 	//リソース
 	Icon *loadIcon(int id,int w=0,int h=0);
-	Bitmap *loadBitmap(int id);
+	CBitmap *loadBitmap(int id);
 	void *loadResource(int id,int type);
 	//環境・パス
 	HINSTANCE getInstance(){ return hInst; }

@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="New Files">
+      <UniqueIdentifier>{d4c02c4a-b056-4f49-a491-55b81219d6d2}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat;h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Class Files">
+      <UniqueIdentifier>{3ac2c708-78e3-45e8-816f-13c18a352ce1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class Files\Window">
+      <UniqueIdentifier>{4bead5ca-a7a9-42cb-81ac-2515a9c67f41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class Files\Window\Control">
+      <UniqueIdentifier>{ce127de1-3dba-4ddd-a767-064161cf737e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class Files\Window\Control\Button">
+      <UniqueIdentifier>{a057009a-58f4-48a8-aa2b-98e50b1499aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class Files\Window\Control\Edit">
+      <UniqueIdentifier>{6d5d12c1-cb49-4e99-b214-42a8c79dee95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class Files\Window\Control\ListBox">
+      <UniqueIdentifier>{1e74a052-84ce-49df-b9ae-10f0f453c4c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class Files\Window\Control\Label">
+      <UniqueIdentifier>{9003a452-797e-4c8c-af3e-78c56847c20d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class Files\Window\Control\Pic">
+      <UniqueIdentifier>{af58d3f7-17e9-46f4-98a3-5ed9d1138425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class Files\Window\Tool">
+      <UniqueIdentifier>{eeb71a6e-3e1f-449c-b2d9-1f0706d333ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class Files\Window\Custom">
+      <UniqueIdentifier>{3ee007cf-9da9-4261-9cfe-a93154cd92cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class Files\Graphics">
+      <UniqueIdentifier>{70515a73-82a6-4da3-b25a-0dd45ff0a4ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class Files\Graphics\Object">
+      <UniqueIdentifier>{1bf6e75b-2d34-44f5-922a-334805678727}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class Files\File">
+      <UniqueIdentifier>{0b7bf031-9860-4093-b2ba-1c01ec1c0121}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class Files\File\Stream">
+      <UniqueIdentifier>{ab6c2cac-eeee-4f6a-9d41-1c13ba3a89dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class Files\Network">
+      <UniqueIdentifier>{c0f4a525-55e8-4ed9-b575-af51be3d969d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class Files\List">
+      <UniqueIdentifier>{101cbba6-c65d-42e1-8ed9-97d151ecb59a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class Files\System">
+      <UniqueIdentifier>{4b0f384b-0522-4bcb-bfeb-048be5dd4094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class Files\Time">
+      <UniqueIdentifier>{86e29d56-5e01-449c-978b-c721cc03e7d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class Files\Sound">
+      <UniqueIdentifier>{1d993a55-a47c-4fff-8b35-18bce3ff494e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Function Files">
+      <UniqueIdentifier>{7047e2b1-6bac-4155-9430-27f69ddf1261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="STL_EX">
+      <UniqueIdentifier>{ec46da06-172a-4bc2-8bbd-6e59bb7cf7b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{5fa0d9e3-e33c-409d-8135-e94b5725d3c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{d8240552-79a0-46e4-8f84-5a75cf565d54}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\c_IDManager.cpp">
+      <Filter>New Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_RectList.cpp">
+      <Filter>New Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>New Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test2.cpp">
+      <Filter>New Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_RectCursor.cpp">
+      <Filter>Class Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_Property.cpp">
+      <Filter>Class Files\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_PropertyRList.cpp">
+      <Filter>Class Files\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_Screen.cpp">
+      <Filter>Class Files\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_Toolbar.cpp">
+      <Filter>Class Files\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_Window.cpp">
+      <Filter>Class Files\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_FileView.cpp">
+      <Filter>Class Files\Window\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_ProgressBar.cpp">
+      <Filter>Class Files\Window\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_ScrollBar.cpp">
+      <Filter>Class Files\Window\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_Button.cpp">
+      <Filter>Class Files\Window\Control\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_CheckBox.cpp">
+      <Filter>Class Files\Window\Control\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_EditBase.cpp">
+      <Filter>Class Files\Window\Control\Edit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_EditBox.cpp">
+      <Filter>Class Files\Window\Control\Edit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_EditField.cpp">
+      <Filter>Class Files\Window\Control\Edit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_ComboBox.cpp">
+      <Filter>Class Files\Window\Control\ListBox</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_ListBox.cpp">
+      <Filter>Class Files\Window\Control\ListBox</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_ListView.cpp">
+      <Filter>Class Files\Window\Control\ListBox</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_TreeItem.cpp">
+      <Filter>Class Files\Window\Control\ListBox</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_TreeView.cpp">
+      <Filter>Class Files\Window\Control\ListBox</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_Label.cpp">
+      <Filter>Class Files\Window\Control\Label</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_Canvas.cpp">
+      <Filter>Class Files\Window\Control\Pic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_ColorBox.cpp">
+      <Filter>Class Files\Window\Control\Pic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_ScrollManager.cpp">
+      <Filter>Class Files\Window\Tool</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_BitmapSelector.cpp">
+      <Filter>Class Files\Window\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_CustomWindow.cpp">
+      <Filter>Class Files\Window\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_ScrollDataWindow.cpp">
+      <Filter>Class Files\Window\Custom</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_Icon.cpp">
+      <Filter>Class Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_ImageList.cpp">
+      <Filter>Class Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_MapScreen.cpp">
+      <Filter>Class Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_VirtualMap.cpp">
+      <Filter>Class Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_Brush.cpp">
+      <Filter>Class Files\Graphics\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_Font.cpp">
+      <Filter>Class Files\Graphics\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_FileDetail.cpp">
+      <Filter>Class Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_FileList.cpp">
+      <Filter>Class Files\File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_FileStream.cpp">
+      <Filter>Class Files\File\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_JavaFileStream.cpp">
+      <Filter>Class Files\File\Stream</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_Ftp.cpp">
+      <Filter>Class Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_Internet.cpp">
+      <Filter>Class Files\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_StringList.cpp">
+      <Filter>Class Files\List</Filter>
+    </ClCompile>
+    <ClCompile Include="src\t_test.cpp">
+      <Filter>Class Files\List</Filter>
+    </ClCompile>
+    <ClCompile Include="src\t_test2.cpp">
+      <Filter>Class Files\List</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_Accelerator.cpp">
+      <Filter>Class Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_App.cpp">
+      <Filter>Class Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_Menu.cpp">
+      <Filter>Class Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_Registry.cpp">
+      <Filter>Class Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_SystemTime.cpp">
+      <Filter>Class Files\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_Time.cpp">
+      <Filter>Class Files\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="src\c_WaveSound.cpp">
+      <Filter>Class Files\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="src\f_base.cpp">
+      <Filter>Function Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\f_drawobject.cpp">
+      <Filter>Function Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\f_java.cpp">
+      <Filter>Function Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\f_mouse.cpp">
+      <Filter>Function Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\f_window.cpp">
+      <Filter>Function Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stl_ex_string.cpp">
+      <Filter>STL_EX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stl_ex_test.cpp">
+      <Filter>STL_EX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dbg_message.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dbg_treeview.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\f_debug.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\c_IDManager.h">
+      <Filter>New Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_RectList.h">
+      <Filter>New Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_RectCursor.h">
+      <Filter>Class Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_Property.h">
+      <Filter>Class Files\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_PropertyRList.h">
+      <Filter>Class Files\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_Screen.h">
+      <Filter>Class Files\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_Toolbar.h">
+      <Filter>Class Files\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_Window.h">
+      <Filter>Class Files\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_FileView.h">
+      <Filter>Class Files\Window\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_ProgressBar.h">
+      <Filter>Class Files\Window\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_ScrollBar.h">
+      <Filter>Class Files\Window\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_Button.h">
+      <Filter>Class Files\Window\Control\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_CheckBox.h">
+      <Filter>Class Files\Window\Control\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_EditBase.h">
+      <Filter>Class Files\Window\Control\Edit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_EditBox.h">
+      <Filter>Class Files\Window\Control\Edit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_EditField.h">
+      <Filter>Class Files\Window\Control\Edit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_ComboBox.h">
+      <Filter>Class Files\Window\Control\ListBox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_ListBox.h">
+      <Filter>Class Files\Window\Control\ListBox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_ListView.h">
+      <Filter>Class Files\Window\Control\ListBox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_TreeItem.h">
+      <Filter>Class Files\Window\Control\ListBox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_TreeView.h">
+      <Filter>Class Files\Window\Control\ListBox</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_Label.h">
+      <Filter>Class Files\Window\Control\Label</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_Canvas.h">
+      <Filter>Class Files\Window\Control\Pic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_ColorBox.h">
+      <Filter>Class Files\Window\Control\Pic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_ScrollManager.h">
+      <Filter>Class Files\Window\Tool</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_BitmapSelector.h">
+      <Filter>Class Files\Window\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_CustomWindow.h">
+      <Filter>Class Files\Window\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_ScrollDataWindow.h">
+      <Filter>Class Files\Window\Custom</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_Graphics.h">
+      <Filter>Class Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_Icon.h">
+      <Filter>Class Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_ImageList.h">
+      <Filter>Class Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_MapScreen.h">
+      <Filter>Class Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_VirtualMap.h">
+      <Filter>Class Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_Brush.h">
+      <Filter>Class Files\Graphics\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_Font.h">
+      <Filter>Class Files\Graphics\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_FileDetail.h">
+      <Filter>Class Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_FileList.h">
+      <Filter>Class Files\File</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_FileStream.h">
+      <Filter>Class Files\File\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_JavaFileStream.h">
+      <Filter>Class Files\File\Stream</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_Ftp.h">
+      <Filter>Class Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_Internet.h">
+      <Filter>Class Files\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_StringList.h">
+      <Filter>Class Files\List</Filter>
+    </ClInclude>
+    <ClInclude Include="src\t_Chain.h">
+      <Filter>Class Files\List</Filter>
+    </ClInclude>
+    <ClInclude Include="src\t_Chain2.h">
+      <Filter>Class Files\List</Filter>
+    </ClInclude>
+    <ClInclude Include="src\t_Chain3.h">
+      <Filter>Class Files\List</Filter>
+    </ClInclude>
+    <ClInclude Include="src\t_SimpleList.h">
+      <Filter>Class Files\List</Filter>
+    </ClInclude>
+    <ClInclude Include="src\t_Table2D.h">
+      <Filter>Class Files\List</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_Accelerator.h">
+      <Filter>Class Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_App.h">
+      <Filter>Class Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_Menu.h">
+      <Filter>Class Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_Registry.h">
+      <Filter>Class Files\System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_SystemTime.h">
+      <Filter>Class Files\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_Time.h">
+      <Filter>Class Files\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="src\c_WaveSound.h">
+      <Filter>Class Files\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="src\f_base.h">
+      <Filter>Function Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\f_drawobject.h">
+      <Filter>Function Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\f_java.h">
+      <Filter>Function Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\f_mouse.h">
+      <Filter>Function Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\f_window.h">
+      <Filter>Function Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\t_base.h">
+      <Filter>Function Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stl_ex_string.h">
+      <Filter>STL_EX</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stl_ex_vector.h">
+      <Filter>STL_EX</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include_c.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include_c_message.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include_c_window.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include_cf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include_com.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include_f.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include_id.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include_stl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include_sys.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include_t.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\type.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dbg_common.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\f_debug.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

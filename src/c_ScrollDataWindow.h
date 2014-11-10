@@ -19,7 +19,7 @@ protected:
 	virtual bool isValidData()=0;
 	virtual int getDataNW()=0;
 	virtual int getDataNH()=0;
-	virtual void drawData(Graphics *g,int xoff,int yoff)=0;
+	virtual void drawData(CDcGraphics *g,int xoff,int yoff)=0;
 protected:
 	//概観
 	Pen::State cursor_pen_param;
@@ -56,9 +56,9 @@ public:
 	void ScrollDataWindow::realizeScrollRange();
 	virtual LRESULT onScroll(UINT msg,WPARAM wParam,LPARAM lParam);
 	//描画
-	virtual LRESULT onPaint(Graphics *g);
+	virtual LRESULT onPaint(CDcGraphics *g);
 	void setCursorFigure(int figure);
-	void drawCursor(Graphics *g,int xoff,int yoff);
+	void drawCursor(CDcGraphics *g,int xoff,int yoff);
 	//メッセージ処理
 	virtual LRESULT onKey(UINT msg,WPARAM wParam,LPARAM lParam);
 	//ツール

@@ -7,10 +7,10 @@ using namespace std;
 #include "f_base.h"
 #include "f_window.h"
 #include "util/std.h"
+#include <GraphicsLib.h>
 
 
-
-void BitmapSelector::drawData(Graphics *g,int xoff,int yoff)
+void BitmapSelector::drawData(CDcGraphics *g,int xoff,int yoff)
 {
 	if(bmp==NULL)return;
 	int bw=bmp->GetSize().w;
@@ -21,14 +21,13 @@ void BitmapSelector::drawData(Graphics *g,int xoff,int yoff)
 	int h=tmin<int>(rcClient.bottom,bh-y);
 	//ビットマップ
 	if(w>0 && h>0){
-		g->drawImage(CPoint(0,0),*bmp,CRect(x,y,w,h));
+		g->DrawImage(CRect(0,0,w,h),*bmp,CRect(x,y,w,h));
 	}
 	//サイド塗りつぶし
 	if(w<0)w=0;
 	if(h<0)h=0;
-	g->SetColor(CColor(128,128,128));
-	g->FillRect(CRect(0,h,rcClient.right-0,rcClient.bottom-h));
-	g->FillRect(CRect(w,0,rcClient.right-w,h-0));
+	g->FillRect(CRect(0,h,rcClient.right-0,rcClient.bottom-h), CColor(128,128,128).win_color());
+	g->FillRect(CRect(w,0,rcClient.right-w,h-0), CColor(128,128,128).win_color());
 }
 
 
@@ -45,7 +44,7 @@ BitmapSelector::~BitmapSelector()
 {
 }
 
-void BitmapSelector::setBitmap(Dib *_bmp)
+void BitmapSelector::setBitmap(CDib *_bmp)
 {
 	bmp=_bmp;
 	realizeBitmap();

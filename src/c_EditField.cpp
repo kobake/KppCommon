@@ -4,7 +4,7 @@ using namespace std;
 #include "c_App.h"
 #include "c_EditField.h"
 #include "include_c_message.h"
-#include "util/mystring.h"
+#include <StringLib.h>
 
 #include "f_debug.h"
 

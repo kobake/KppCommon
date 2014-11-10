@@ -5,7 +5,7 @@ using namespace std;
 #include "c_App.h"
 #include "c_EditBox.h"
 #include "include_c_message.h"
-#include "util/mystring.h"
+#include <StringLib.h>
 
 
 

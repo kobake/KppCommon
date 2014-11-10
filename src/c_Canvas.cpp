@@ -76,7 +76,7 @@ PAINTPROC Canvas::getPaintProc()
 	return paintproc;
 }
 
-LRESULT Canvas::onPaint(Graphics *g)
+LRESULT Canvas::onPaint(CDcGraphics *g)
 {
 	if(paintproc!=NULL){
 		paintproc(g);

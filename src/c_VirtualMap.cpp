@@ -2,9 +2,9 @@
 #include <windows.h>
 #include "c_VirtualMap.h"
 
-
+#if 0
 //•`‰æ
-void drawMap(Graphics *g,RECT *_rcUpdate,VirtualMap *map,int map_x,int map_y,const CColor& side_color)
+void drawMap(CDcGraphics *g,RECT *_rcUpdate,VirtualMap *map,int map_x,int map_y,const CColor& side_color)
 {
 	RECT rcUpdate=*_rcUpdate;
 	int px=map->getPixelsPerX();
@@ -17,7 +17,7 @@ void drawMap(Graphics *g,RECT *_rcUpdate,VirtualMap *map,int map_x,int map_y,con
 		map,map_x+rcUpdate.left/px,map_y+rcUpdate.top/py,side_color);
 }
 
-void drawMap(Graphics *g,int _dst_x,int _dst_y,int _dst_w,int _dst_h,VirtualMap *map,int src_x,int src_y,const CColor& side_color)
+void drawMap(CDcGraphics *g,int _dst_x,int _dst_y,int _dst_w,int _dst_h,VirtualMap *map,int src_x,int src_y,const CColor& side_color)
 {
 	int dst_x=_dst_x;
 	int dst_y=_dst_y;
@@ -89,3 +89,4 @@ void drawMap(Graphics *g,int _dst_x,int _dst_y,int _dst_w,int _dst_h,VirtualMap 
 	}
 
 }
+#endif

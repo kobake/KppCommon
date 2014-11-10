@@ -1,9 +1,5 @@
 #pragma once
 
-namespace gr{
-class Graphics;
-}
-using namespace gr;
 #include <GraphicsLib.h> // CColor
 
 class VirtualMap;
@@ -24,12 +20,12 @@ public:
 	int getMapX(){ return map_x; }
 	int getMapY(){ return map_y; }
 	void offsetMapXY(int dx,int dy);
-	void drawMap(Graphics *g,RECT *rcUpdate);
+	void drawMap(CDcGraphics *g,RECT *rcUpdate);
 	bool screenToMap(POINT *pt);
 	RECT getCursorRect(RectCursor *cursor);
 	POINT getScrollRange(const RECT *rcScreen);
 	void adjustMapXY(int x_max,int y_max);
-	void drawCursor(Graphics *g,RECT *rcUpdate,RectCursor *cursor,const CColor& color=CColor(255,0,0));
+	void drawCursor(CDcGraphics *g,RECT *rcUpdate,RectCursor *cursor,const CColor& color=CColor(255,0,0));
 
 /*	void setScrollRange(const RECT *rcScreen)
 	{

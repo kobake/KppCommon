@@ -2,7 +2,7 @@
 #include <windows.h>
 #include <wininet.h>
 #include "c_Internet.h"
-#include "util/mywstring.h"
+#include <StringLib.h>
 using namespace util;
 
 Internet::Internet()

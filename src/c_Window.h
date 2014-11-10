@@ -46,10 +46,8 @@
 #include "include_c_message.h"
 #include "t_SimpleList.h"
 
-namespace gr{
-class Graphics;
-}
-using namespace gr;
+class CGraphics;
+class CDcGraphics;
 
 class Icon;
 class ScrollManager;
@@ -196,7 +194,7 @@ public:
 	void releaseCapture(){ ReleaseCapture(); }
 	int messageBox(const wstring& text,const wstring& caption=L"",int type=0);
 	int messageBoxF(const wstring& caption,int type,const wchar* text,...);
-	void dragAcceptFiles(bool accept,bool notify=false){ DragAcceptFiles(hwnd,accept?TRUE:FALSE); notify_drop=notify; }
+	void dragAcceptFiles(bool accept,bool notify=false);
 	void setIcon(Icon *icon);
 	LRESULT sendMessage(UINT msg,WPARAM wParam,LPARAM lParam){ return SendMessage(hwnd,msg,wParam,lParam); }
 	LRESULT postMessage(UINT msg,WPARAM wParam,LPARAM lParam){ return SendMessage(hwnd,msg,wParam,lParam); }
@@ -233,7 +231,7 @@ public:
 	virtual LRESULT onMove(UINT msg,WPARAM wParam,LPARAM lParam);
 	virtual LRESULT onNotify(UINT msg,WPARAM wParam,LPARAM lParam);
 	virtual LRESULT onPaint(UINT msg,WPARAM wParam,LPARAM lParam);
-	virtual LRESULT onPaint(Graphics *g);
+	virtual LRESULT onPaint(CDcGraphics *g);
 	virtual LRESULT onScroll(UINT msg,WPARAM wParam,LPARAM lParam);
 	virtual LRESULT onSize(UINT msg,WPARAM wParam,LPARAM lParam);
 	virtual LRESULT onTaskTray(UINT msg,WPARAM wParam,LPARAM lParam);

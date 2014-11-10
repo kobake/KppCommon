@@ -3,7 +3,7 @@
 #include "include_sys.h"
 #include "c_FileView.h"
 #include "f_window.h"
-#include "util/mystring.h"
+#include <StringLib.h>
 #include "f_base.h"
 
 

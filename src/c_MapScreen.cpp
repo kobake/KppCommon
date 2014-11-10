@@ -2,7 +2,8 @@
 #include <windows.h>
 #include "c_MapScreen.h"
 #include "f_base.h"
-#include "win/Cast.h"
+//#include "win/Cast.h"
+#include <WinSystemLib.h>
 
 MapScreen::MapScreen()
 {
@@ -32,7 +33,8 @@ void MapScreen::offsetMapXY(int dx,int dy)
 	map_x+=dx;
 	map_y+=dy;
 }
-void MapScreen::drawCursor(Graphics *g,RECT *rcUpdate,RectCursor *cursor,const CColor& color)
+#if 0
+void MapScreen::drawCursor(CDcGraphics *g,RECT *rcUpdate,RectCursor *cursor,const CColor& color)
 {
 	RECT rc=cursor->getRect();
 	//
@@ -58,10 +60,11 @@ void MapScreen::drawCursor(Graphics *g,RECT *rcUpdate,RectCursor *cursor,const C
 		g->setInvert(false);
 	}
 }
-void MapScreen::drawMap(Graphics *g,RECT *rcUpdate)
+void MapScreen::drawMap(CDcGraphics *g,RECT *rcUpdate)
 {
 	::drawMap(g,&Rect2RECT(g->getInvalidRect()),map,map_x,map_y,CColor(0,0,0));
 }
+#endif
 //ƒ}ƒbƒv“à•”‚Å‚ ‚ê‚Î true
 bool MapScreen::screenToMap(POINT *pt)
 {

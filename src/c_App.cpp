@@ -1,10 +1,13 @@
 #include "include_sys.h"
 #include "c_App.h"
 #include "common/_required.h"
-#include "util/mystring.h"
+#include <StringLib.h>
 #include "c_Screen.h"
-#include "gr/Bitmap.h"
-#include "util/mywstring.h"
+
+#include <GraphicsLib.h>
+#include <StringLib.h>
+#include "util/CIniFile.h"
+#include "src/CBitmap.h"
 
 App *app;
 Screen *screen;
@@ -35,7 +38,8 @@ int WINAPI WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,LPSTR lpCmdLine,i
 	setlocale(LC_ALL,"Japanese");
 
 	int ret;
-	CCommandLine cmdline(GetCommandLine());
+	CCommandLine cmdline;
+	cmdline.Initialize(GetCommandLine());
 	screen=new Screen();
 	srand(GetTickCount());
 	app=AppCreate(hInstance,hPrevInstance);
@@ -104,7 +108,7 @@ void App::_init_v()
 	wcscpy(inipath,exepath);
 	p=wcsrchr(inipath,L'.'); if(p==NULL)p=wcschr(inipath,L'\0');
 	wcscpy(p,L".ini");
-	inifile=new IniFile(inipath);
+	inifile=new CIniFile(inipath);
 
 	//ŠÂ‹«•Ï”‚ÌÝ’è
 	if(!is_dll){
@@ -175,9 +179,9 @@ Icon *App::loadIcon(int id,int w,int h)
 	return new Icon(this,id,w,h);
 }
 
-Bitmap *App::loadBitmap(int id)
+CBitmap *App::loadBitmap(int id)
 {
-	return new Bitmap(this->getInstance(),id);
+	return new CBitmap(this->getInstance(),id);
 }
 
 void *App::loadResource(int id,int type)

@@ -2,6 +2,7 @@
 #include "id/res.h"
 #include "c_FileStream.h"
 #include "c_WaveSound.h"
+#include <MMSystem.h>
 
 #define STATE_NONE		0
 #define STATE_MEMORY	1
