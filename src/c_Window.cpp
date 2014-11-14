@@ -9,6 +9,7 @@
 #include "id/menu.h"
 #include <ShellAPI.h>
 #include <GraphicsLib.h>
+#include <Windows.h>
 #include <MMSystem.h>
 
 /*
@@ -387,7 +388,6 @@ void Window::enableScroll(bool e,int sb_kind)
 // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 
 #include <GraphicsLib.h>
-// using namespace win::gr;
 
 LRESULT CALLBACK Window::WndProcWindow(HWND hwnd,UINT msg,WPARAM wparam,LPARAM lparam)
 {

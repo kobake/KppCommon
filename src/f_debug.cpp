@@ -2,6 +2,7 @@
 #include <StringLib.h>
 using namespace util;
 #include "dbg_common.h"
+#include <Windows.h>
 #include <MMSystem.h>
 
 #ifndef _DEBUG

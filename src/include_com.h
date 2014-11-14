@@ -9,10 +9,3 @@
 #include "include_t.h"
 #include "include_stl.h"
 #include "id/error.h"
-
-
-#ifdef _DEBUG
-#pragma comment(lib,"commonlibD.lib")
-#else
-#pragma comment(lib,"commonlib.lib")
-#endif

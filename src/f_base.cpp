@@ -1,7 +1,8 @@
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
-
+#include <Windows.h>
+#include <MMSystem.h>
 #include "f_base.h"
 
 int fmax(int n1,int n2)
