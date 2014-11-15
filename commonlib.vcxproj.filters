@@ -459,9 +459,6 @@
     <ClInclude Include="src\include_c_window.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="src\include_cf.h">
-      <Filter>include</Filter>
-    </ClInclude>
     <ClInclude Include="src\include_com.h">
       <Filter>include</Filter>
     </ClInclude>
