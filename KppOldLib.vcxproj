@@ -12,7 +12,7 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{72C7BD39-4973-4026-9D47-4DD95E76A544}</ProjectGuid>
-    <ProjectName>KppCommon</ProjectName>
+    <ProjectName>KppOldLibs</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -59,7 +59,7 @@
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <AdditionalIncludeDirectories>C:\boost_1_55_0;C:\sites\~Lib\c2lib;C:\sites\~Lib\DbLib;C:\sites\~Lib\DebugLib;C:\sites\~Lib\GraphicsLib;C:\sites\~Lib\IoLib;C:\sites\~Lib\LayoutLib;C:\sites\~Lib\LogLib;C:\sites\~Lib\MathLib;C:\sites\~Lib\MemoryLib;C:\sites\~Lib\NetworkLib;C:\sites\~Lib\StringLib;C:\sites\~Lib\TestLib;C:\sites\~Lib\ThreadLib;C:\sites\~Lib\WinSystemLib;C:\sites\~Lib\XmlLib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\boost_1_55_0;../KppLibs/BaseLib;../KppLibs/DbLib;../KppLibs/DebugLib;../KppLibs/GraphicsLib;../KppLibs/IoLib;../KppLibs/LayoutLib;../KppLibs/LogLib;../KppLibs/MathLib;../KppLibs/MemoryLib;../KppLibs/NetworkLib;../KppLibs/StringLib;../KppLibs/TestLib;../KppLibs/ThreadLib;../KppLibs/WinSystemLib;../KppLibs/XmlLib</AdditionalIncludeDirectories>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -86,7 +86,7 @@
       <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalIncludeDirectories>C:\boost_1_55_0;C:\sites\~Lib\c2lib;C:\sites\~Lib\DbLib;C:\sites\~Lib\DebugLib;C:\sites\~Lib\GraphicsLib;C:\sites\~Lib\IoLib;C:\sites\~Lib\LayoutLib;C:\sites\~Lib\LogLib;C:\sites\~Lib\MathLib;C:\sites\~Lib\MemoryLib;C:\sites\~Lib\NetworkLib;C:\sites\~Lib\StringLib;C:\sites\~Lib\TestLib;C:\sites\~Lib\ThreadLib;C:\sites\~Lib\WinSystemLib;C:\sites\~Lib\XmlLib</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\boost_1_55_0;../KppLibs/BaseLib;../KppLibs/DbLib;../KppLibs/DebugLib;../KppLibs/GraphicsLib;../KppLibs/IoLib;../KppLibs/LayoutLib;../KppLibs/LogLib;../KppLibs/MathLib;../KppLibs/MemoryLib;../KppLibs/NetworkLib;../KppLibs/StringLib;../KppLibs/TestLib;../KppLibs/ThreadLib;../KppLibs/WinSystemLib;../KppLibs/XmlLib</AdditionalIncludeDirectories>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
