@@ -4,7 +4,7 @@ using namespace std;
 #include "c_Canvas.h"
 #include "c_CustomWindow.h"
 #include "id/class.h"
-
+#include "c_App.h"
 
 
 // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //

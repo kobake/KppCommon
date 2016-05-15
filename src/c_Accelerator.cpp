@@ -1,5 +1,6 @@
 #include "include_sys.h"
 #include "c_Accelerator.h"
+#include "c_App.h"
 
 
 BYTE Accelerator::_flag_to_virt(int flag)

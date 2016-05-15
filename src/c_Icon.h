@@ -1,7 +1,4 @@
-class Icon;
-
-#ifndef _Icon_
-#define _Icon_
+#pragma once
 
 class App;
 
@@ -20,7 +17,4 @@ public:
 	HICON _getHICON(){ return hIcon; }
 };
 
-#include "c_App.h"
-
-#endif
 

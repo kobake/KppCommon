@@ -190,8 +190,22 @@ void *App::loadResource(int id,int type)
 	if(hResource==NULL)return NULL;
 	HGLOBAL hMemory=LoadResource(hInst,hResource);
 	if(hMemory==NULL)return NULL;
+	DWORD size = SizeofResource(hInst,hResource);
 	void *ret=LockResource(hMemory);
 	return ret;
+}
+void App::loadResource2(std::vector<BYTE>* buf, int id,int type)
+{
+	buf->clear();
+	HRSRC hResource=FindResource(hInst,MAKEINTRESOURCE(id),MAKEINTRESOURCE(type));
+	if(hResource==NULL)return;
+	HGLOBAL hMemory=LoadResource(hInst,hResource);
+	if(hMemory==NULL)return;
+	DWORD size = SizeofResource(hInst,hResource);
+	buf->resize(size);
+	void *ret=LockResource(hMemory);
+	BYTE* p = &(*buf)[0];
+	memcpy(p, ret, size);
 }
 
 

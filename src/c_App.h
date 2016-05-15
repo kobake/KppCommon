@@ -6,6 +6,7 @@
 #include "c_Screen.h"
 #include <WinSystemLib.h> // ini
 #include <ShellAPI.h> // NOTIFYICONDATA
+#include <vector>
 class Icon;
 class CBitmap;
 
@@ -42,6 +43,7 @@ public:
 	Icon *loadIcon(int id,int w=0,int h=0);
 	CBitmap *loadBitmap(int id);
 	void *loadResource(int id,int type);
+	void loadResource2(std::vector<BYTE>* buf, int id,int type);
 	//ä¬ã´ÅEÉpÉX
 	HINSTANCE getInstance(){ return hInst; }
 	HINSTANCE getPrevInstance(){ return hPrevInst; }

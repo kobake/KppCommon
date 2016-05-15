@@ -8,6 +8,7 @@
 #include "c_EditField.h"
 #include "c_ComboBox.h"
 #include "id/class.h"
+#include "c_App.h"
 using namespace util;
 
 static PropertyRList *property_list,*property_list_org;

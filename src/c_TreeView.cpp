@@ -4,7 +4,7 @@
 using namespace std;
 #include "c_TreeView.h"
 #include "id/class.h"
-
+#include "c_App.h"
 
 LRESULT CALLBACK WndProcTreeView(HWND hwndTree,UINT msg,WPARAM wParam,LPARAM lParam);
 

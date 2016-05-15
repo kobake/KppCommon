@@ -1,5 +1,6 @@
 #include "include_sys.h"
 #include "c_ImageList.h"
+#include "c_App.h"
 
 ImageList::ImageList(int cx,int cy,int init_size,int max_size)
 {

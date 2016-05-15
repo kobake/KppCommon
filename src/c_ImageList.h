@@ -1,7 +1,4 @@
-class ImageList;
-
-#ifndef _ImageList_
-#define _ImageList_
+#pragma once
 
 class Icon;
 class App;
@@ -17,9 +14,3 @@ public:
 public:
 	operator HIMAGELIST() const;
 };
-
-#include "c_Icon.h"
-#include "c_App.h"
-
-#endif
-

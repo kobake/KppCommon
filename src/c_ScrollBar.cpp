@@ -5,7 +5,7 @@ using namespace std;
 #include "c_ScrollBar.h"
 #include "c_CustomWindow.h"
 #include "id/class.h"
-
+#include "c_App.h"
 
 // -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- //
 // -- -- -- -- -- -- -- -- -- -- --  コンストラクタ・デストラクタ  -- -- -- -- -- -- -- -- -- -- -- -- -- //

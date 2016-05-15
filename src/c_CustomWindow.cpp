@@ -2,7 +2,7 @@
 #include "c_CustomWindow.h"
 #include "f_window.h"
 #include "id/class.h"
-
+#include "c_App.h"
 
 CustomWindow::CustomWindow(const wstring& caption,int x,int y,int w,int h,Window *_parent,int _option,int _id)
 : Window(CID_CUSTOM_WINDOW,0,_parent,_option,_id)
